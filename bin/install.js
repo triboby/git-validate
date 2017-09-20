@@ -1,3 +1,6 @@
 var Utils = require('../lib/utils');
 
-Utils.installHooks(['pre-commit', 'pre-push']);
+Utils.installScript('lint', 'eslint .');
+Utils.configureHook('pre-push', ['lint', 'test']);
+
+Utils.installHooks(['pre-push']);
