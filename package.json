@@ -1,6 +1,6 @@
 {
   "name": "pre-push-edu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the extensible core of git-validate",
   "main": "index.js",
   "scripts": {
